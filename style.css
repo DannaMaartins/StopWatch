@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --label-icon: url("img/lua.png");
+}
+
+.theme{
+    background-image: var(--label-icon);
+    padding: 67px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4%;
+    left:4%;
+    cursor: pointer;
+}
+
+.dark__mode{
+    --label-icon:url('img/sol.png');
+    --color-bg: black;
+    --color-font:white;
+}
+body{
+    background: var(--color-bg);
+    color: var(--color-font);
+    transition: 2s;
+}
+
+div{
+    text-align: center;
+    font-size: 4rem;
+    padding: 8rem;
+}
+
+
+
+#btn{
+    display: none;
+}
+
+button{
+
+    height: 3rem;
+    width: 5.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 7%;
+
+}
+
+.start__btn{
+    background-color: #95CC61;
+}
+
+.pause__btn{
+    background-color: #FCB750;
+}
+
+.stop__btn{
+    background-color: #f44336;
+}
